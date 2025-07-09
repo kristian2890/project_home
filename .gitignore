@@ -33,3 +33,6 @@ htmlcov/
 
 # Misc
 *.swp 
+
+# Cursor
+.cursorrules
