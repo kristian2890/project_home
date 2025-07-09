@@ -1,0 +1,28 @@
+# System Specs
+- vCPU: 3
+- RAM: 4 GB
+- Disk: 80 GB (local)
+- Traffic Out: 20 TB
+- Public IP: 95.216.138.199
+- OS: Ubuntu
+- Provider: Hetzner
+
+# web server
+- nginx
+- auto accept new packages
+
+# editor
+- only use command line for editing - do not use a gui based editor like fx vim
+
+# git config
+- user.name: Kristian Buhl Jørgensen
+- user.email: kristian2890@gmail.com
+- github username: kristian2890
+- root project folder: /opt/cursor/projects
+
+# project
+- Repo url: https://github.com/kristian2890/project_home
+- Root folder: /opt/cursor/projects/project_home_folder/project_home
+- Runtime: python 3.12
+- Python Environment: 'venv' at '/opt/cursor/projects/project_home_folder/project_home'
+- Django run command: venv/bin/python src/manage.py runserver 0.0.0.0:8001

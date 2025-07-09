@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Blog - Portfolio{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Blog</h1>
+    <ul>
+        {% for post in posts %}
+            <li style="margin-bottom:1.5rem;">
+                <a href="{% url 'blog_post' slug=post.slug %}"><strong>{{ post.title }}</strong></a>
+                <br><small>{{ post.created_at|date:'M d, Y' }}</small>
+            </li>
+        {% empty %}
+            <li>No blog posts yet.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %} 

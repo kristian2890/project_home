@@ -1,0 +1,13 @@
+{% extends 'portfolio/base.html' %}
+{% load markdown_extras %}
+{% block title %}{{ post.title }} - Blog - Portfolio{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>{{ post.title }}</h1>
+    <small>{{ post.created_at|date:'M d, Y' }}</small>
+    <div class="blog-content">
+        {{ post.content|markdown|safe }}
+    </div>
+    <a href="/blog/">&larr; Back to Blog</a>
+</div>
+{% endblock %} 
