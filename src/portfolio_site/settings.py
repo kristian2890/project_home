@@ -26,7 +26,7 @@ DEBUG = False
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('DJANGO_SECRET_KEY') if DEBUG else {{ project.DJANGO_SECRET_KEY }}
 
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv()) if DEBUG else {{ project.VADJANGO_ALLOWED_HOSTSRIABLENAME }}
+ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv()) if DEBUG else {{ project.DJANGO_ALLOWED_HOSTS }}
 
 
 # Application definition
