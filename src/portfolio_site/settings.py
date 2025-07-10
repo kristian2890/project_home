@@ -26,7 +26,7 @@ DEBUG = False
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('DJANGO_SECRET_KEY') 
 
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'buhlian.dev']
 
 
 # Application definition
